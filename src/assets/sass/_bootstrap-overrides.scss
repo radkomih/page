@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+.bg-primary {
+  background-color: $navy-950 !important;
+  background-image: linear-gradient(180deg, rgba(23, 35, 58, 0.95) 0%, rgba(11, 18, 32, 0.98) 65%, rgba(11, 18, 32, 1) 100%);
+}
+
+.text-primary {
+  color: $accent !important;
+}
+
+a {
+  color: $navy-800;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $navy-950;
+    text-decoration: none;
+  }
+}

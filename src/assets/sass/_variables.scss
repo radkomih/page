@@ -1,0 +1,65 @@
+// Variables
+
+// Restate Bootstrap Variables
+
+$white: #f6f4ef !default;
+$gray-100: #e5dfd6 !default;
+$gray-200: #d2cbbf !default;
+$gray-300: #b8b0a2 !default;
+$gray-400: #9d968a !default;
+$gray-500: #827c72 !default;
+$gray-600: #68635b !default;
+$gray-700: #4f4b45 !default;
+$gray-800: #373430 !default;
+$gray-900: #211f1c !default;
+$black: #0b0a09 !default;
+
+$navy-950: #0b1220 !default;
+$navy-900: #111b2b !default;
+$navy-800: #17233a !default;
+$navy-700: #1f2c45 !default;
+
+$gold: #d1b36b !default;
+$gold-light: #ead8ab !default;
+$gold-dark: #a88a46 !default;
+
+$blue: #1c1cff !default;
+$blue-light: #82a9f9 !default;
+
+$indigo-light: #9543ff !default;
+$indigo: #6610f2 !default;
+$indigo-dark: #1a1138 !default;
+
+$purple-light: #c3b5fa !default;
+$purple: #552bbf !default;
+$purple-dark: #381877 !default;
+
+$pink: #dd1ab6 !default;
+$pink-light: #f33f8a !default;
+$pink-dark: #a71856 !default;
+
+$green: #93bc26 !default;
+$green-light: #bdf433 !default;
+$teal: #32c89c !default;
+$cyan: $gold !default;
+
+$red: #dc3545 !default;
+$orange: #bd5d38 !default;
+$yellow: #ffc300 !default;
+
+
+$primary: $navy-900 !default;
+$secondary: $gray-500 !default;
+$success: $green !default;
+$info: $gold-light !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $navy-950 !default;
+
+$accent: $gold !default;
+$accent-soft: $gold-light !default;
+
+// Page Variables
+
+$sidebar-base-width: 17rem;

@@ -1,0 +1,10 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'global';
+@use 'nav';
+@use 'resume-item';
+@use 'bootstrap-overrides';
+@use 'print';
+
+@import './bootstrap/bootstrap.min.css';
+@import './fontawesome/css/all.min.css';
