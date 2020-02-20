@@ -1,0 +1,12 @@
+{
+  "name": "radosvet-mihtarski-cv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/serve.js .",
+    "build": "node scripts/build.js",
+    "preview": "node scripts/serve.js public",
+    "pdf": "npm run build && node scripts/export-pdf.js",
+    "pdf:export": "node scripts/export-pdf.js"
+  }
+}
