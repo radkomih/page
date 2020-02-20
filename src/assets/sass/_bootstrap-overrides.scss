@@ -1,0 +1,18 @@
+.bg-primary {
+  background-color: $indigo-dark !important;
+}
+
+.text-primary {
+  color: $gray-700 !important;
+}
+
+a {
+  color: $gray-300;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($gray-700, 10%);
+    text-decoration: none;
+  }
+}
