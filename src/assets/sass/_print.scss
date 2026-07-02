@@ -4,6 +4,7 @@
   html,
   body {
     background-color: $white !important;
+    background-image: none !important;
     font-size: 82%;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -26,6 +27,10 @@
   }
 
   #sideNav {
+    background-color: $navy-950 !important;
+    background-image: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
@@ -53,7 +58,7 @@
     max-width: 10rem !important;
     max-height: 10rem !important;
     border: 0.35rem solid $accent !important;
-    box-shadow: 0 18px 40px rgba(7, 10, 18, 0.45) !important;
+    box-shadow: none !important;
   }
 
   #sideNav .navbar-collapse {
@@ -101,6 +106,11 @@
   }
 
   section.resume-section {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
     min-height: auto !important;
@@ -139,6 +149,8 @@
   }
 
   * {
+    animation: none !important;
+    filter: none !important;
     transition: none !important;
   }
 
