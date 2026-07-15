@@ -28,14 +28,6 @@ class Layout extends Component {
                 { name: 'description', content: 'Senior Software Engineer Resume' },
                 { name: 'keywords', content: 'senior software engineer' },
               ]}
-              link={[
-                { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-                { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
-                {
-                  rel: 'stylesheet',
-                  href: 'https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap',
-                },
-              ]}
             >
               <html lang="en" />
             </Helmet>

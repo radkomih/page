@@ -5,7 +5,6 @@ const Experience = (props) => {
     if (typeof item === 'string') {
       return (
         <li key={`project-${index}`}>
-          <i className="fa-li fa fa-check"></i>
           {item}
         </li>
       )
@@ -16,7 +15,6 @@ const Experience = (props) => {
 
     return (
       <li key={`project-${index}`}>
-        <i className="fa-li fa fa-check"></i>
         {url ? (
           <a className="project-link" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${label} (opens in new tab)`}>
             {label}
@@ -32,7 +30,6 @@ const Experience = (props) => {
   const responsibilities = props.responsibilities.map((item, index) => {
     return (
       <li key={`responsibility-${index}`}>
-        <i className="fa-li fa fa-check"></i>
         {item}
       </li>
     )
@@ -49,17 +46,16 @@ const Experience = (props) => {
             <p>{props.description}</p>
 
             <strong>Projects</strong>
-            <ul className="fa-ul mb-0" aria-label="Project list">{projects}</ul>
+            <ul className="resume-list mb-0" aria-label="Project list">{projects}</ul>
 
             <br></br>
             <strong>Responsibilities</strong>
-            <ul className="fa-ul mb-0" aria-label="Responsibilities list">{responsibilities}</ul>
+            <ul className="resume-list mb-0" aria-label="Responsibilities list">{responsibilities}</ul>
 
             <br></br>
             <strong>Tech Stack</strong>
-            <ul className="fa-ul mb-0" aria-label="Technology stack">
+            <ul className="resume-list mb-0" aria-label="Technology stack">
               <li>
-                <i className="fa-li fa fa-check"></i>
                 {props.stack}
               </li>
             </ul>

@@ -106,10 +106,10 @@
   }
 
   section.resume-section {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(23, 35, 58, 0.12) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 14px 34px rgba(23, 35, 58, 0.1) !important;
     backdrop-filter: none !important;
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;

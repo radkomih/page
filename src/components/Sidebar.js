@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Scrollspy from 'react-scrollspy';
-import Scroll from './Scroll';
 
 import avatar from '../assets/images/avatar.png';
 import config from '../../config';
@@ -42,25 +40,18 @@ export class Sidebar extends Component {
         </a>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <Scrollspy
-            items={tabs.map(s => s.href)}
-            currentClassName="active"
-            offset={-300}
-            className="navbar-nav"
-          >
+          <ul className="navbar-nav">
             {tabs.map((tab, i) => {
               const { href, content } = tab;
               return (
                 <li className="nav-item" key={href}>
-                  <Scroll type="id" element={href}>
-                    <a className="nav-link" href={`#${href}`}>
-                      {content}
-                    </a>
-                  </Scroll>
+                  <a className="nav-link" href={`#${href}`}>
+                    {content}
+                  </a>
                 </li>
               );
             })}
-          </Scrollspy>
+          </ul>
         </div>
       </nav>
     );

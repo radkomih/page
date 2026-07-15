@@ -3,6 +3,10 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include body-font;
   padding-top: 54px;
@@ -65,30 +69,58 @@ p.lead {
   color: $gray-600;
 }
 
-.social-icons {
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
   a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 3.5rem;
     width: 3.5rem;
     background-color: rgba(23, 35, 58, 0.08);
     color: $navy-800 !important;
     border-radius: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
     border: 1px solid rgba(23, 35, 58, 0.18);
     transition: all 0.2s ease;
-
-    &:last-child {
-      margin-right: 0;
-    }
 
     &:hover {
       background-color: rgba(23, 35, 58, 0.95);
       color: $white !important;
       border-color: rgba(23, 35, 58, 0.85);
       transform: translateY(-2px);
+    }
+  }
+
+  svg {
+    display: block;
+    height: 1.45rem;
+    width: 1.45rem;
+    fill: currentColor;
+  }
+}
+
+.resume-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 1.8rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.45em;
+      left: 0.25rem;
+      width: 0.55rem;
+      height: 0.3rem;
+      border-bottom: 2px solid $accent;
+      border-left: 2px solid $accent;
+      transform: rotate(-45deg);
     }
   }
 }
