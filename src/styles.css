@@ -40,10 +40,7 @@ body {
   min-width: 320px;
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 18% 8%, rgba(209, 179, 107, 0.24), transparent 28rem),
-    radial-gradient(circle at 86% 12%, rgba(142, 162, 198, 0.16), transparent 26rem),
-    linear-gradient(180deg, #6f7480 0%, #f8f4ec 34rem, #f3eee4 100%);
+  background: #f3eee4;
 }
 
 a {

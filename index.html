@@ -56,16 +56,15 @@
             </dl>
 
             <p>
-              Over the past 10+ years, I've built production software in AI,
-              blockchain, distributed infrastructure, compilers, and high-throughput
-              backend services. I work across architecture and implementation,
-              with an emphasis on keeping systems reliable, fast, and maintainable as
-              they grow.
+              Over the past 10+ years, I've worked across cloud backend services,
+              distributed systems, blockchain protocols, compiler toolchains, and AI products.
+              I've taken projects from technical research and system architecture through
+              implementation and production delivery, often leading work in complex and unfamiliar domains.
             </p>
             <p>
-              I enjoy getting up to speed in unfamiliar domains, turning vague
-              requirements into practical engineering plans, leading technical
-              execution, and carrying difficult projects through to production.
+              My work involves developing the domain understanding needed to clarify
+              ambiguous requirements, design and evaluate system architectures, and create
+              concrete engineering plans that I then carry through to production.
             </p>
 
             <div class="social-links">
@@ -132,11 +131,10 @@
               <li>
                 <a class="project-link" href="https://www.coinbase.com/" target="_blank"
                   rel="noopener noreferrer">Coinbase: Tokenized Equities</a>
-                - Contributed to a large microservices architecture for tokenizing brokerage-held equities through
-                smart contracts. The system provides transparent on-chain records, reduces reliance on intermediaries,
-                and
-                supports 24/7 transfers and settlement, asset distribution, corporate actions such as dividends and
-                stock splits, and integrations with DeFi protocols.
+                - Contributed to a microservices architecture that uses smart contracts to represent brokerage-held
+                shares as blockchain tokens, enabling on-chain transfers and corporate actions such as dividends and
+                stock splits. Responsible for financial state consistency between off-chain and on-chain systems,
+                partial failure handling and reconciliation.
               </li>
               <li>
                 <a class="project-link" href="https://www.neuraprotocol.io/" target="_blank"
@@ -144,14 +142,15 @@
                 - Designed and implemented components of a custom EVM-compatible blockchain built for an AI-native
                 economy, where AI agents and users can interact and transact. The system adapted Sui's DAG-based
                 Narwhal-Bullshark consensus mechanism and integrated it with Reth as the execution layer, achieving
-                sub-second block times.
+                fast block execution within a few seconds.
               </li>
               <li>
                 <a class="project-link" href="https://hederion.com" target="_blank" rel="noopener noreferrer">Hedera:
                   AI Explorer</a>
-                - Led the development of Hederion, a production AI agent that answers natural-language questions by
-                autonomously querying live and historical data from the Hedera public network. It decides which MCP
-                tools to use and coordinates retrieval across vector search, REST and GraphQL APIs, and BigQuery.
+                - Led development of Hederion, an AI explorer combining live and historical Hedera data through
+                MCP tools backed by vector search, REST/GraphQL APIs, and BigQuery. Chose a lower-cost LLM and
+                designed the agent harness and tools to address its limitations. Built an evaluation framework to
+                track how system changes affected answer quality.
               </li>
               <li>
                 <a class="project-link" href="https://limechain.tech" target="_blank"
@@ -172,32 +171,19 @@
               <li>
                 <a class="project-link" href="https://taiko.xyz/" target="_blank" rel="noopener noreferrer">Ethereum:
                   Taiko Preconfirmations</a>
-                - Worked on transaction preconfirmations for Taiko, an Ethereum L2, which scales Ethereum by processing
-                transactions separately before settling them on Ethereum. Added fast inclusion guarantees by changing
-                the mempool, sequencing,
-                ordering, block building, execution, and priority rules.
+                - Worked on transaction preconfirmations for Taiko, an Ethereum L2, to provide fast transaction
+                inclusion guarantees. Modified mempool handling, and transaction ordering, block building,
+                execution and sequencing to support these guarantees across the transaction processing pipeline.
               </li>
               <li>
                 <a class="project-link" href="https://limechain.github.io/gosemble" target="_blank"
-                  rel="noopener noreferrer">Gosemble: Runtime Framework</a>
-                - Co-developed Gosemble, a framework for writing Polkadot-compatible
-                blockchain runtimes in Go, including core runtime modules and SCALE
-                codec support.
-              </li>
-              <li>
-                <a class="project-link" href="https://limechain.github.io/gosemble/overview/toolchain/#14-binaryen"
-                  target="_blank" rel="noopener noreferrer">Gosemble: Go Toolchain</a>
-                - Built a toolchain for compiling Go to a custom WebAssembly target and a garbage collector designed to
-                work with an external allocator.
-              </li>
-              <li>
-                <a class="project-link" href="https://polkadot.network" target="_blank"
-                  rel="noopener noreferrer">Polkadot: Go Runtime</a>
-                - Researched and secured multiple grants to implement an alternative Polkadot-compatible
-                blockchain
-                runtime in Go, which defines the deterministic state-transition rules executed by a distributed network
-                of nodes operating as a replicated state machine, keeping each node's copy of the shared state
-                consistent.
+                  rel="noopener noreferrer">Polkadot: Framework &amp; Toolchain</a>
+                - Researched and secured multiple grants for an alternative Polkadot-compatible blockchain runtime
+                in Go; as a result, co-developed the Gosemble framework, including core runtime modules and SCALE codec
+                support.
+                A major focus was building a custom Go compiler toolchain for Polkadot’s standalone WebAssembly
+                requirements, including implementing a WASM compilation target and a custom garbage
+                collector integrated with the required external allocator.
               </li>
             </ul>
 
@@ -243,10 +229,9 @@
             <h3>Senior Software Engineer</h3>
             <div class="subheading">Nexgen Development</div>
             <p>
-              Built full-stack components for an advertising platform, working across platform
-              services - campaign workflows, account-based analytics, and data processing. Contributed to the
-              architecture and extensibility of the platform, improved the maintainability and operational reliability
-              of legacy services, and investigated production issues involving performance and scale.
+              Built full-stack components for an advertising platform spanning campaign workflows,
+              account-based analytics, and data processing. Improved the maintainability and reliability of
+              legacy services and investigated production performance issues.
             </p>
 
             <ul class="resume-list" aria-label="Project list">
@@ -294,11 +279,12 @@
             <h3>Software Engineer</h3>
             <div class="subheading">Metrilo</div>
             <p>
-              Joined Metrilo early and took ownership of several major product areas as the startup grew. Helped scale
-              the platform to process millions of e-commerce events each day and built backend services for data
-              ingestion, analytics, customer engagement, CRM, email automation, reporting, and plugin integrations.
-              Also improved the reliability and maintainability of legacy components, supported production systems,
-              investigated incidents, and worked on deployments and day-to-day operations.
+              Joined Metrilo at an early stage and owned several major product areas as the startup grew. Built
+              features across e-commerce analytics, CRM, and customer engagement. Helped evolve and scale the
+              production platform to process millions of e-commerce events per day, building backend services and
+              integrations, improving the reliability and maintainability of legacy components, and handling production
+              support,
+              incident investigation, deployments, and day-to-day operations.
             </p>
 
             <ul class="resume-list" aria-label="Project list">
@@ -337,27 +323,36 @@
 
         <article class="resume-item compact">
           <div class="resume-content">
-            <h3>Core Expertise</h3>
-            <p>Backend Engineering, System Design, Technical Research, Cloud-Native Services</p>
+            <h3>Engineering Approach</h3>
+            <p>Technical Research, Problem Breakdown, Clarifying Ambiguous Requirements,
+              Evaluating Architectural Trade-offs, Production Delivery</p>
           </div>
         </article>
         <article class="resume-item compact">
           <div class="resume-content">
-            <h3>Domains</h3>
-            <p>AI, Distributed Systems, Blockchain, Cryptography, Fintech, Big Data, Analytics, E-commerce</p>
+            <h3>Technical Expertise</h3>
+            <p>Backend Engineering, System Design, Distributed Systems, Cloud-Native Services</p>
           </div>
         </article>
         <article class="resume-item compact">
           <div class="resume-content">
-            <h3>Agentic Systems</h3>
-            <p>LLM and Tool Orchestration, Context Management, MCP Servers, RAG Pipelines,
+            <h3>Domains of Experience</h3>
+            <p>Blockchain Protocols, AI Agent Systems,
+              Applied Cryptography (MPC, Zero-Knowledge), Fintech,
+              Data Processing and Analytics, E-commerce</p>
+          </div>
+        </article>
+        <article class="resume-item compact">
+          <div class="resume-content">
+            <h3>AI Engineering</h3>
+            <p>LLMs, Tools Orchestration, Context Management, MCP Servers, RAG Pipelines,
               Tracing and Evaluation</p>
           </div>
         </article>
         <article class="resume-item compact">
           <div class="resume-content">
             <h3>Programming Languages</h3>
-            <p>Go, Rust, Solidity, JavaScript, Python, Ruby, Bash</p>
+            <p>Go, Rust, Python, Ruby, JavaScript, Solidity, Bash</p>
           </div>
         </article>
         <article class="resume-item compact">
@@ -375,7 +370,7 @@
         <article class="resume-item compact">
           <div class="resume-content">
             <h3>Cloud &amp; Infrastructure</h3>
-            <p>GCP, AWS, Docker, Kubernetes, CI/CD</p>
+            <p>GCP, AWS, Kubernetes, Docker, CI/CD</p>
           </div>
         </article>
         <article class="resume-item compact">
